@@ -1,0 +1,2 @@
+string	en-US	recipeapp:recipe	./parameter-datasets/recipeapp:recipe.tsv
+string	en-US	recipeapp:ingredient	./parameter-datasets/recipeapp:ingredient.tsv
