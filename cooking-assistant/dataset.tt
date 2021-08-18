@@ -1,0 +1,11 @@
+dataset @recipeapp #[language="en"]{
+  
+  action (p_recipe : Entity(recipeapp:recipe)) = @deviceapp.set_recipe(recipe=p_recipe)
+  #_[utterances=["want to cook ${p_recipe}", 'get recipe for ${p_recipe}', 'find how to cook ${p_recipe}']];
+
+  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.provide(ingredient=p_ingredient)
+  #_[utterances=["add ingredient ${p_ingredient}"]];
+
+  action = @recipeapp.ack()
+  #_[utterances=['show next step', 'show next instruction', 'show next', 'get next', 'get next step', 'get next instruction']];
+}

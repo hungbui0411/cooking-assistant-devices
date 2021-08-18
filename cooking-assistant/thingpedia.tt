@@ -1,0 +1,38 @@
+class @recipeapp {
+  entity recipe;
+  entity ingredient;
+
+
+  action ack()
+  #_[canonical="acknowledge instruction"]
+  #_[confirmation="go to next step"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action set_recipe(in req recipe : Entity(recipeapp:recipe)
+                       #_[canonical={
+                         base=["recipe"],
+                         verb=["cook #", "make #"]
+                       }]
+                       #[string_values="recipeapp:recipe"]
+                       #_[prompt="what food do you want to make"])
+  #_[canonical="set recipe"]
+  #_[confirmation="set recipe"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action provide(in req ingredient : Entity(recipeapp:ingredient)
+                       #_[canonical={
+                         base=["ingredient"]
+                       }]
+                       #[string_values="recipeapp:ingredient"]
+                       #_[prompt="what ingredient to you have"])
+  #_[canonical="provide ingredient"]
+  #_[confirmation="provide ingredient"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  
+}
+
+
