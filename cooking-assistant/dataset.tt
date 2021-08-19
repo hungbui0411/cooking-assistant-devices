@@ -1,6 +1,6 @@
 dataset @recipeapp #[language="en"]{
   
-  action (p_recipe : Entity(recipeapp:recipe)) = @deviceapp.set_recipe(recipe=p_recipe)
+  action (p_recipe : Entity(recipeapp:recipe)) = @recipeapp.set_recipe(recipe=p_recipe)
   #_[utterances=["want to cook ${p_recipe}", 'get recipe for ${p_recipe}', 'find how to cook ${p_recipe}']];
 
   action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.provide(ingredient=p_ingredient)
