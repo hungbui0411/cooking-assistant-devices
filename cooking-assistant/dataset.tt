@@ -3,9 +3,31 @@ dataset @recipeapp #[language="en"]{
   action (p_recipe : Entity(recipeapp:recipe)) = @recipeapp.set_recipe(recipe=p_recipe)
   #_[utterances=["want to cook ${p_recipe}", 'get recipe for ${p_recipe}', 'find how to cook ${p_recipe}']];
 
-  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.provide(ingredient=p_ingredient)
-  #_[utterances=["add ingredient ${p_ingredient}"]];
+  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.add_ingredients(ingredient=p_ingredient)
+  #_[utterances=["add ingredient ${p_ingredient}", "add ingredient ${p_ingredient} and ${p_ingredient}","add ingredient ${p_ingredient},${p_ingredient}, and ${p_ingredient}"]];
+
+  action (p_ingredient : Entity(recipeapp:constraint)) = @recipeapp.add_constraints(constraint=p_constraint)
+  #_[utterances=["add constraint ${p_constraint}", "add constraint ${p_constraint} and ${p_constraint}", "add constraint ${p_constraint}, ${p_constraint}, and ${p_constraint}"]];
 
   action = @recipeapp.ack()
-  #_[utterances=['show next step', 'show next instruction', 'show next', 'get next', 'get next step', 'get next instruction']];
+  #_[utterances=['got it', 'awesome', 'understood', 'alright', 'okay', 'great']];
+
+  action = @recipeapp.start_cooking()
+  #_[utterances=["start cooking", "start recipe", "start instructions"]];
+
+  action = @recipeapp.repeat()
+  #_[utterances=["repeat", "repeat current instruction"]];
+
+  action = @recipeapp.ask_generic()
+  #_[utterances=["what can I do", "what should I do", "what are we doing at this state"]];
+
+  action = @recipeapp.ask_recipe()
+  #_[utterances=["how many steps are there left", "how many tablespoons", "how many cups", "how many steps in total are there", "what is the number of this step", "what cookware to use"]];
+
+  action = @recipeapp.next_step()
+  #_[utterances=["next step", "move to next step", "next", "next step please"]];
+
+  action = @recipeapp.restart()
+  #_[utterances=["restart system", "restart to initial state"]];
+
 }

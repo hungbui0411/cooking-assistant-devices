@@ -1,0 +1,89 @@
+with bread
+no bread
+with banana
+no banana
+with chicken fillet
+no chicken fillet
+with ribs
+no ribs
+with sausage
+no sausage
+with broccoli
+no broccoli
+with cabbage
+no cabbage
+with carrot
+no carrot
+with cucumber
+no cucumber
+with egg
+no egg
+with lemon
+no lemon
+with mushroom
+no mushroom
+with onion
+no onion
+with parsley
+no parsley
+with pepper
+no pepper
+with potato
+no potato
+with spring onion
+no spring onion
+with tomato
+no tomato
+with fry
+no fry
+with chop
+no chop
+with peel
+no peel
+with cook
+no cook
+with squeeze
+no squeeze
+with break
+no break
+with smash
+no smash
+with mix
+no mix
+with put together
+no put together
+with boil
+no boil
+with empty
+no empty
+with french skillet
+no french skillet
+with fry pan
+no fry pan
+with wok
+no wok
+with grill pan
+no grill pan
+with sauce pan
+no sauce pan
+with saucier
+no saucier
+with double boiler
+no double boiler
+with saute pan
+no saute pan
+with multi pot
+no multi pot
+with braiser
+no braiser
+with frenc oven
+no frenc oven
+with deep skillet
+no deep skillet
+with roaster pan
+no roaster pan
+with stock pot
+no stock pot
+with soup pot
+no soup pot
+

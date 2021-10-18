@@ -2,13 +2,6 @@ class @recipeapp {
   entity recipe;
   entity ingredient;
 
-
-  action ack()
-  #_[canonical="acknowledge instruction"]
-  #_[confirmation="go to next step"]
-  #[confirm=false]
-  #[minimal_projection=[]];
-
   action set_recipe(in req recipe : Entity(recipeapp:recipe)
                        #_[canonical={
                          base=["recipe"],
@@ -21,17 +14,69 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
-  action provide(in req ingredient : Entity(recipeapp:ingredient)
+  action add_ingredients(in req ingredient : Entity(recipeapp:ingredient)
                        #_[canonical={
                          base=["ingredient"]
                        }]
                        #[string_values="recipeapp:ingredient"]
                        #_[prompt="what ingredient to you have"])
-  #_[canonical="provide ingredient"]
-  #_[confirmation="provide ingredient"]
+  #_[canonical="add ingredient"]
+  #_[confirmation="add ingredient"]
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action add_constraints(in req constraint : Entity(recipeapp:constraint)
+                       #_[canonical={
+                         base=["constraint"]
+                       }]
+                       #[string_values="recipeapp:constraint"]
+                       #_[prompt="what constraints do you want to add"])
+  #_[canonical="add constraints"]
+  #_[confirmation="add constraints"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action ack()
+  #_[canonical="acknowledge instruction"]
+  #_[confirmation="go to next step"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action start_cooking()
+  #_[canonical="start cooking"]
+  #_[confirmation="start_cooking"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action repeat()
+  #_[canonical="repeat current instruction"]
+  #_[confirmation="repeat current instruction"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action ask_generic()
+  #_[canonical="ask about current state"]
+  #_[confirmation="ask about current state"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action ask_recipe()
+  #_[canonical="ask questions about the recipe"]
+  #_[confirmation="ask questions about the recipe"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action next_step()
+  #_[canonical="move to next step"]
+  #_[confirmation="move to next step"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action restart()
+  #_[canonical="restart system"]
+  #_[confirmation="restart system"]
+  #[confirm=false]
+  #[minimal_projection=[]];
   
 }
 
