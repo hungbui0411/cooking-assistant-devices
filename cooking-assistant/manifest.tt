@@ -36,7 +36,18 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
-   action avoid_cookingmethod(in req cookingmethod : Entity(recipeapp:cookingmethod)
+  action add_preferred_ingredients(in req ingredient : Entity(recipeapp:ingredient)
+                        #_[canonical={
+                          base=["ingredient"]
+                        }]
+                        #[string_values="recipeapp:ingredient"]
+                        #_[prompt="what ingredient constraints do you want to prefer"])
+   #_[canonical="add preferred ingredients"]
+   #_[confirmation="add preferred ingredients"]
+   #[confirm=false]
+   #[minimal_projection=[]];
+
+  action avoid_cookingmethod(in req cookingmethod : Entity(recipeapp:cookingmethod)
                        #_[canonical={
                          base=["cookingmethod"]
                        }]
