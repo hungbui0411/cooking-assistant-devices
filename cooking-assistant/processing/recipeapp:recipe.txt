@@ -1,0 +1,100 @@
+aroma
+bagel
+batter
+beans
+beer
+biscuit
+bread
+broth
+burger
+butter
+cake
+candy
+caramel
+caviar
+cheese
+chili
+chocolate
+cider
+cobbler
+cocoa
+coffee
+cookie
+cream
+croissant
+curd
+dessert
+eggs
+entree
+filet
+fish
+flour
+foie gras
+hamburger
+juice
+ketchup
+kitchen
+lard
+liquor
+margarine
+marinade
+mayo
+mayonnaise
+meat
+milk
+mousse
+muffin
+mushroom1
+noodle
+nut
+oil
+olive
+omelette
+pan
+pasta
+paste
+pastry
+pie
+pizza
+poutine
+pudding
+raclette
+rice
+salad
+salsa
+sandwich
+soda
+soup
+soy
+spice
+steak
+stew
+syrup
+tartar
+taste
+tea
+toast
+vinegar
+waffle
+water
+wheat
+wine
+wok
+yeast
+yogurt
+ramen
+tonkotsu ramen
+miso ramen
+shoyu ramen
+shio ramen
+tsukemen
+wakayama ramen
+abura soba
+asahikawa ramen
+ramen broth
+sliced fried pork
+chashu
+menma
+pho
+vermicelli
+instant ramen

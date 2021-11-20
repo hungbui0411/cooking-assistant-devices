@@ -22,23 +22,15 @@ coffee	coffee	1
 cookie	cookie	1
 cream	cream	1
 croissant	croissant	1
-crumble	crumble	1
-cuisine	cuisine	1
 curd	curd	1
 dessert	dessert	1
-dish	dish	1
-drink	drink	1
 eggs	eggs	1
 entree	entree	1
 filet	filet	1
 fish	fish	1
 flour	flour	1
 foie gras	foie gras	1
-food	food	1
-glaze	glaze	1
-grill	grill	1
 hamburger	hamburger	1
-ice	ice	1
 juice	juice	1
 ketchup	ketchup	1
 kitchen	kitchen	1
@@ -52,7 +44,7 @@ meat	meat	1
 milk	milk	1
 mousse	mousse	1
 muffin	muffin	1
-mushroom	mushroom	1
+mushroom1	mushroom1	1
 noodle	noodle	1
 nut	nut	1
 oil	oil	1
@@ -64,19 +56,13 @@ paste	paste	1
 pastry	pastry	1
 pie	pie	1
 pizza	pizza	1
-plate	plate	1
-pot	pot	1
 poutine	poutine	1
 pudding	pudding	1
 raclette	raclette	1
-recipe	recipe	1
 rice	rice	1
 salad	salad	1
 salsa	salsa	1
 sandwich	sandwich	1
-sauce	sauce	1
-seasoning	seasoning	1
-skillet	skillet	1
 soda	soda	1
 soup	soup	1
 soy	soy	1
@@ -96,3 +82,19 @@ wine	wine	1
 wok	wok	1
 yeast	yeast	1
 yogurt	yogurt	1
+ramen	ramen	1
+tonkotsu ramen	tonkotsu ramen	1
+miso ramen	miso ramen	1
+shoyu ramen	shoyu ramen	1
+shio ramen	shio ramen	1
+tsukemen	tsukemen	1
+wakayama ramen	wakayama ramen	1
+abura soba	abura soba	1
+asahikawa ramen	asahikawa ramen	1
+ramen broth	ramen broth	1
+sliced fried pork	sliced fried pork	1
+chashu	chashu	1
+menma	menma	1
+pho	pho	1
+vermicelli	vermicelli	1
+instant ramen	instant ramen	1

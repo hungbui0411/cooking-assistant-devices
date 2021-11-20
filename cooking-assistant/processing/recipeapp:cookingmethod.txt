@@ -1,0 +1,13 @@
+boiling
+poaching
+stewing
+braising
+steaming
+baking
+roasting
+pot roasting
+grilling
+shallow frying
+deep frying
+microwaving
+frying

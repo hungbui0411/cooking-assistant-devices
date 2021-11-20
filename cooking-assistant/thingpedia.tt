@@ -25,14 +25,25 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
-  action add_constraints(in req constraint : Entity(recipeapp:constraint)
+  action add_constraints(in req ingredient : Entity(recipeapp:ingredient)
                        #_[canonical={
-                         base=["constraint"]
+                         base=["ingredient"]
                        }]
-                       #[string_values="recipeapp:constraint"]
-                       #_[prompt="what constraints do you want to add"])
+                       #[string_values="recipeapp:ingredient"]
+                       #_[prompt="what ingredient constraints do you want to add"])
   #_[canonical="add constraints"]
   #_[confirmation="add constraints"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+   action avoid_cookingmethod(in req cookingmethod : Entity(recipeapp:cookingmethod)
+                       #_[canonical={
+                         base=["cookingmethod"]
+                       }]
+                       #[string_values="recipeapp:cookingmethod"]
+                       #_[prompt="what cooking methods do you want to avoid?"])
+  #_[canonical="avoid cooking methods"]
+  #_[confirmation="avoid cooking methods"]
   #[confirm=false]
   #[minimal_projection=[]];
 

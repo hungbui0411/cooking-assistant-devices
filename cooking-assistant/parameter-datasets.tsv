@@ -1,3 +1,4 @@
 string	en-US	recipeapp:recipe	parameter-datasets/recipeapp:recipe.tsv
 string	en-US	recipeapp:ingredient	parameter-datasets/recipeapp:ingredient.tsv
-string	en-US	recipeapp:constraint	parameter-datasets/recipeapp:constraint.tsv
+string	en-US	recipeapp:cookware	parameter-datasets/recipeapp:cookware.tsv
+string	en-US	recipeapp:cookingmethod	parameter-datasets/recipeapp:cookingmethod.tsv

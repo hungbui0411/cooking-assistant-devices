@@ -4,10 +4,10 @@ dataset @recipeapp #[language="en"]{
   #_[utterances=["want to cook ${p_recipe}", 'get recipe for ${p_recipe}', 'find how to cook ${p_recipe}']];
 
   action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.add_ingredients(ingredient=p_ingredient)
-  #_[utterances=["add ingredient ${p_ingredient}", "add ingredient ${p_ingredient} and ${p_ingredient}","add ingredient ${p_ingredient},${p_ingredient}, and ${p_ingredient}"]];
+  #_[utterances=["add ingredient ${p_ingredient}", "I have ${p_ingredient}","I already have ${p_ingredient}"]];
 
-  action (p_ingredient : Entity(recipeapp:constraint)) = @recipeapp.add_constraints(constraint=p_constraint)
-  #_[utterances=["add constraint ${p_constraint}", "add constraint ${p_constraint} and ${p_constraint}", "add constraint ${p_constraint}, ${p_constraint}, and ${p_constraint}"]];
+  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.add_constraints(ingredient=p_ingredient)
+  #_[utterances=["I don't have ${p_ingredient}", "I do not have ${p_ingredient}", "I do not want ${p_ingredient}", "I don't have ${p_ingredient}"]];
 
   action = @recipeapp.ack()
   #_[utterances=['got it', 'awesome', 'understood', 'alright', 'okay', 'great']];
@@ -29,5 +29,8 @@ dataset @recipeapp #[language="en"]{
 
   action = @recipeapp.restart()
   #_[utterances=["restart system", "restart to initial state"]];
+
+  action (p_cookingmethod : Entity(recipeapp:cookingmethod)) = @recipeapp.avoid_cookingmethod(cookingmethod=p_cookingmethod)
+  #_[utterances=["avoid ${p_cookingmethod}"]];
 
 }
