@@ -45,4 +45,7 @@ dataset @recipeapp #[language="en"]{
   action (p_idx : Number) = @recipeapp.jump_to(idx=p_idx)
   #_[utterances=["jump to step ${p_idx}", "jump to step number ${p_idx}"]];
 
+  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.order(ingredient=p_ingredient)
+  #_[utterances=["order some ${p_ingredient}", "order ${p_ingredient}", "buy some ${p_ingredient} from Amazon", "buy ${p_ingredient} from Amazon"]];
+
 }

@@ -77,6 +77,17 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action order(in req ingredient : Entity(recipeapp:ingredient)
+                       #_[canonical={
+                         base=["ingredient"]
+                       }]
+                       #[string_values="recipeapp:ingredient"]
+                       #_[prompt="what ingredient to order"])
+  #_[canonical="order"]
+  #_[confirmation="order"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
   action ack()
   #_[canonical="acknowledge instruction"]
   #_[confirmation="go to next step"]
