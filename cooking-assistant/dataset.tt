@@ -33,4 +33,7 @@ dataset @recipeapp #[language="en"]{
   action (p_cookingmethod : Entity(recipeapp:cookingmethod)) = @recipeapp.avoid_cookingmethod(cookingmethod=p_cookingmethod)
   #_[utterances=["avoid ${p_cookingmethod}"]];
 
+  action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.add_preferred_ingredients(ingredient=p_ingredient)
+  #_[utterances=["prefer ingredient ${p_ingredient}", "I prefer ${p_ingredient}","I like ${p_ingredient}"]];
+
 }
