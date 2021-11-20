@@ -27,6 +27,9 @@ dataset @recipeapp #[language="en"]{
   action = @recipeapp.next_step()
   #_[utterances=["next step", "move to next step", "next", "next step please"]];
 
+  action = @recipeapp.last_step()
+  #_[utterances=["last step", "move to last step", "go back", "last step please"]];
+
   action = @recipeapp.restart()
   #_[utterances=["restart system", "restart to initial state"]];
 

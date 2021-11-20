@@ -124,6 +124,12 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action last_step()
+  #_[canonical="move to last step"]
+  #_[confirmation="move to last step"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
   action restart()
   #_[canonical="restart system"]
   #_[confirmation="restart system"]
