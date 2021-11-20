@@ -36,4 +36,7 @@ dataset @recipeapp #[language="en"]{
   action (p_ingredient : Entity(recipeapp:ingredient)) = @recipeapp.add_preferred_ingredients(ingredient=p_ingredient)
   #_[utterances=["prefer ingredient ${p_ingredient}", "I prefer ${p_ingredient}","I like ${p_ingredient}"]];
 
+  action (p_calories : Number) = @recipeapp.set_max_calories(calories=p_calories)
+  #_[utterances=["set max calories to ${p_calories}"]];
+
 }

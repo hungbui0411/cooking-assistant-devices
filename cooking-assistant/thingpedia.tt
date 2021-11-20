@@ -47,6 +47,16 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action set_max_calories(in req calories : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what is the maximum number of calories?"])
+  #_[canonical="set_max_calories"]
+  #_[confirmation="set_max_calories"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
   action ack()
   #_[canonical="acknowledge instruction"]
   #_[confirmation="go to next step"]
