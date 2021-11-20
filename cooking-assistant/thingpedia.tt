@@ -67,6 +67,16 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action jump_to(in req idx : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what index to jump to?"])
+  #_[canonical="jump_to"]
+  #_[confirmation="jump_to"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
   action ack()
   #_[canonical="acknowledge instruction"]
   #_[confirmation="go to next step"]

@@ -42,4 +42,7 @@ dataset @recipeapp #[language="en"]{
   action (p_timer : Number) = @recipeapp.set_timer(timer=p_timer)
   #_[utterances=["set timer for ${p_timer} minutes"]];
 
+  action (p_idx : Number) = @recipeapp.jump_to(idx=p_idx)
+  #_[utterances=["jump to step ${p_idx}", "jump to step number ${p_idx}"]];
+
 }
