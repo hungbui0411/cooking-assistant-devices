@@ -36,18 +36,7 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
-  action add_preferred_ingredients(in req ingredient : Entity(recipeapp:ingredient)
-                       #_[canonical={
-                         base=["ingredient"]
-                       }]
-                       #[string_values="recipeapp:ingredient"]
-                       #_[prompt="what ingredient constraints do you want to prefer"])
-  #_[canonical="add preferred ingredients"]
-  #_[confirmation="add preferred ingredients"]
-  #[confirm=false]
-  #[minimal_projection=[]];
-
-  action avoid_cookingmethod(in req cookingmethod : Entity(recipeapp:cookingmethod)
+   action avoid_cookingmethod(in req cookingmethod : Entity(recipeapp:cookingmethod)
                        #_[canonical={
                          base=["cookingmethod"]
                        }]
@@ -55,6 +44,47 @@ class @recipeapp {
                        #_[prompt="what cooking methods do you want to avoid?"])
   #_[canonical="avoid cooking methods"]
   #_[confirmation="avoid cooking methods"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action set_max_calories(in req calories : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what is the maximum number of calories?"])
+  #_[canonical="set_max_calories"]
+  #_[confirmation="set_max_calories"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action set_timer(in req timer : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what time to set the timer?"])
+  #_[canonical="set_timer"]
+  #_[confirmation="set_timer"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action jump_to(in req idx : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what index to jump to?"])
+  #_[canonical="jump_to"]
+  #_[confirmation="jump_to"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action order(in req ingredient : Entity(recipeapp:ingredient)
+                       #_[canonical={
+                         base=["ingredient"]
+                       }]
+                       #[string_values="recipeapp:ingredient"]
+                       #_[prompt="what ingredient to order"])
+  #_[canonical="order"]
+  #_[confirmation="order"]
   #[confirm=false]
   #[minimal_projection=[]];
 
@@ -91,6 +121,12 @@ class @recipeapp {
   action next_step()
   #_[canonical="move to next step"]
   #_[confirmation="move to next step"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
+  action last_step()
+  #_[canonical="move to last step"]
+  #_[confirmation="move to last step"]
   #[confirm=false]
   #[minimal_projection=[]];
 
