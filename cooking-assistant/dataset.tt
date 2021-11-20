@@ -39,4 +39,7 @@ dataset @recipeapp #[language="en"]{
   action (p_calories : Number) = @recipeapp.set_max_calories(calories=p_calories)
   #_[utterances=["set max calories to ${p_calories}"]];
 
+  action (p_timer : Number) = @recipeapp.set_timer(timer=p_timer)
+  #_[utterances=["set timer for ${p_timer} minutes"]];
+
 }

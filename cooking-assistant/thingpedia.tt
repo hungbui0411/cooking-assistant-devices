@@ -57,6 +57,16 @@ class @recipeapp {
   #[confirm=false]
   #[minimal_projection=[]];
 
+  action set_timer(in req timer : Number
+                       #_[canonical={
+                         base=["Number"]
+                       }]
+                       #_[prompt="what time to set the timer?"])
+  #_[canonical="set_timer"]
+  #_[confirmation="set_timer"]
+  #[confirm=false]
+  #[minimal_projection=[]];
+
   action ack()
   #_[canonical="acknowledge instruction"]
   #_[confirmation="go to next step"]
